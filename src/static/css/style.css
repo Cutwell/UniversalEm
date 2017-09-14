@@ -1,8 +1,8 @@
 body,html {
 	height: 100%;
 	width:100%;
-	overflow: hidden;
 	background: #E96D65;
+	overflow-x: hidden;
 }
 h1 {
 	font-family: 'pragma-sans', Fallback, sans-serif;
@@ -14,9 +14,28 @@ code {
 	background: #EFF2F1;
 	padding: 1em;
 }
+input {
+	width: 4em;
+	height: 2em;
+	outline: none;
+}
 
 [contenteditable="true"]:focus {
     outline: none;
+}
+.tooltip {
+	visibility: hidden;
+	position: absolute;
+	margin-bottom: 10em;
+	color: #fff;
+	font-family: 'pragma-sans', Fallback, sans-serif;
+}
+.integer_input {
+	display: inline-block;
+	outline: none;
+}
+.integer_input:hover .tooltip {
+	visibility: visible;
 }
 .container {
 	overflow: auto;
@@ -24,6 +43,7 @@ code {
 	background: #EFF2F1;
 	box-shadow: 1em 1em 1em #b14943;
 	margin: auto;
+	margin-bottom: 5em;
     width: 60%;
 }
 .hiddenButton {

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title> UniversalEM </title>
+		<meta name="description" content="Compress Python scripts online">
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="src/static/css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="src/services/px2em.js"></script>
+		<script type="text/javascript" src="src/static/js/filereader.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<span class="blue">Pixels</span><span class="grey"> 2 </span><span class="yellow">EM</span>
+			</h1>
+		</header>
+
+		<div class="outer-div">
+			<div class="inner-div">
+				<label id="uploadForm" class="custom-alias">
+					<input name="script" class="hiddenButton" type="file" accept=".css" onchange="openFile(event);" required>
+					<i class="white-icon fa fa-upload fa-2x" aria-hidden="true"></i>
+				</label>
+			</div>
+		</div>
+
+		<div class="container" id="container-centre" contenteditable="true">
+			<pre><code class="css" id="input">upload a css file with <i class="fa fa-upload" aria-hidden="true"></i> to start</code></pre>
+		</div>
+	</body>
+
+</html>

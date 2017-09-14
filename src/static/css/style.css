@@ -1,0 +1,61 @@
+body,html {
+	height: 100%;
+	width:100%;
+	overflow: hidden;
+	background: #E96D65;
+}
+h1 {
+	font-family: 'pragma-sans', Fallback, sans-serif;
+	text-align: center;
+	font-size: 3em;
+	cursor: default;
+}
+code {
+	background: #EFF2F1;
+	padding: 1em;
+}
+
+[contenteditable="true"]:focus {
+    outline: none;
+}
+.container {
+	overflow: auto;
+	overflow-x: auto;
+	background: #EFF2F1;
+	box-shadow: 1em 1em 1em #b14943;
+	margin: auto;
+    width: 60%;
+}
+.hiddenButton {
+	display: none;
+}
+.custom-alias {
+	padding: 0.5em;
+}
+.outer-div {
+    padding: 0.5em;
+    text-align: center;
+}
+.inner-div {
+    display: inline-block;
+    padding: 1em;
+}
+.white-icon {
+    color: #fff;
+    text-shadow: 0.02em 0.02em 0.02em #ccc;
+}
+.grey {
+	color: #646464;
+}
+.blue {
+	color: #4584b6
+}
+.yellow {
+	color: #ffde57
+}
+#container-centre {
+}
+#container-centre pre code{
+	display: inline-block;
+	contenteditable: true;
+}
